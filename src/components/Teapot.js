@@ -839,7 +839,7 @@ function getControlPoints() {
 
 
 class TeapotGeometry extends BufferGeometry {
-    constructor(nr = 18, nc = 18) {
+    constructor(nu = 18, nv = 18) {
         super();
 
         const indices = [];
@@ -933,7 +933,7 @@ class TeapotGeometry extends BufferGeometry {
 
         const cpts = getControlPoints();
         for (let i = 0; i < 32; i++) {
-            evaluatePatch(cpts[i], nr, nc);
+            evaluatePatch(cpts[i], nu, nv);
         }
 
         this.setIndex(indices);
