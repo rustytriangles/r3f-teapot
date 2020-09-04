@@ -29,7 +29,7 @@ function Teapot(props) {
       onPointerOut={(e) => setHover(false)}
       geometry = {geometry}
       >
-      <meshStandardMaterial attach="material" color={hovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial attach="material" color={hovered ? 'greenyellow' : 'violet'} />
     </mesh>
   );
 }
