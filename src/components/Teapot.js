@@ -1,4 +1,4 @@
-import {BufferGeometry, Float32BufferAttribute, Vector3} from 'three'
+import {BufferGeometry, Float32BufferAttribute, Vector3} from 'three';
 
 function getControlPoints() {
     return [ // 0
@@ -912,9 +912,9 @@ class TeapotGeometry extends BufferGeometry {
                     t2.normalize();
                     let n = t2.crossVectors(t2, t1);
                     n.normalize();
-                    normals.push(n.x, n.y, n.z)
+                    normals.push(n.x, n.y, n.z);
 
-                    uvs.push(u, v);;
+                    uvs.push(u, v);
                 }
             }
 
@@ -935,9 +935,9 @@ class TeapotGeometry extends BufferGeometry {
         const nr = 13;
         const nc = 12;
 
-        const cpts = getControlPoints()
+        const cpts = getControlPoints();
         for (let i = 0; i < 32; i++) {
-            evaluatePatch(cpts[i], nr, nc)
+            evaluatePatch(cpts[i], nr, nc);
         }
 
         this.setIndex(indices);
@@ -948,4 +948,4 @@ class TeapotGeometry extends BufferGeometry {
     }
 }
 
-export default TeapotGeometry
+export default TeapotGeometry;
